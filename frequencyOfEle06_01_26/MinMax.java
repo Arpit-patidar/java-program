@@ -1,0 +1,28 @@
+package frequencyOfEle06_01_26;
+
+import java.util.Arrays;
+
+public class MinMax {
+public static void main(String[] args) {
+	int[]a= {1,2,4,5,6};
+	System.out.println(max(a)-min(a));
+}
+public static int max(int []a) {
+	int max = Integer.MIN_VALUE;
+	for(int i =0;i<a.length;i++) {
+		if(a[i]>max) {
+			max=a[i];
+	}
+	}
+	return max;
+}
+public static int min(int []a) {
+	int min = Integer.MAX_VALUE;
+	for(int i =0;i<a.length;i++) {
+		if(a[i]<min) {
+			min=a[i];
+	}
+	}
+	return min;
+}
+}
